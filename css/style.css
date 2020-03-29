@@ -1,0 +1,298 @@
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%
+}
+body {
+    font-family: 'Opens Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 400;    
+    color: #1c2b38
+}
+
+/*navbar*/
+.navbar{
+    margin-bottom: 2rem;
+}
+.navbar-default {
+    background: white;
+    padding-left: 80px;
+}
+.navbar-transparent {
+    background-color: transparent;
+    margin-left: 80px
+}
+.navbar-brand {
+    margin-right: 30px;
+}
+.logo-def {
+    width: 70px;
+    height: 50px
+}
+.navbar-brand-default {
+    width: 70px;
+    height: 50px
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	margin-right: 50px;
+	color: #1c2b38
+}
+.leftnav {
+    float: left;
+}
+
+
+/* Nav Hover */
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #f2a30b;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+/*banner*/
+.banner {
+    background: url('../pictures/landingpage.jpg') center center no-repeat;
+    background-size: cover;
+    height: 105vh
+}
+.banner .col-6 {
+    margin-right: 60px
+}
+.banner-content {
+    margin-top: 42%
+}
+.banner-content h1 {
+	font-family: Futura, "Trebuchet MS";
+	font-weight: bold;
+	color: #1c2b38;
+    font-size: 51px
+}
+.banner-content p {
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #1c2b38
+}
+p.intro {
+    margin-top: 10px;
+    font-size: 20px
+}
+.hiremebtn {
+    background-color: #f2a30b;
+    color: white;
+    padding: 10px;
+    width: 30%;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 0px
+}
+
+/*  Additional Contact */
+.addcon {
+    -webkit-box-shadow: 1px 2px 10px -1px rgba(87,85,87,0.75);
+    -moz-box-shadow: 1px 2px 10px -1px rgba(87,85,87,0.75);
+    box-shadow: 1px 2px 10px -1px rgba(87,85,87,0.75);
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    margin-top: -50px
+}
+.addconT {
+    color: #f2a30b;
+    font-weight: bold;
+    margin-bottom: 0px
+}
+.addconS {
+    font-size: 15px;
+    margin-bottom: 0px
+}
+
+/* About Me */
+#AboutMe .col-12 {
+    margin-top: 50px;
+}
+.aboutme {
+    padding-right: 100px;
+}
+.aboutmeleft {
+    padding-top: 50px;
+}
+.aboutme h1 {
+    font-family: Futura, "Trebuchet MS";
+    color: #1c2b38;
+    font-weight: bold;
+    margin-bottom: 0px
+}
+.sub {
+    font-size: 12px;
+}
+.pbody {
+    text-align: justify;
+}
+.pskills {
+    font-size: 15px;
+    font-weight: bold;
+    border: solid #f2a30b 3px;
+    border-radius: 7px;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+}
+.pskillsMed {
+    width: 100px;
+}
+.pskillsLong {
+    width: 140px;
+}
+.pskillsLonggg {
+    width: 200px;
+}
+.skilldiv {
+    margin-top: 10px;
+}
+.skilldiv1 {
+    height: 47px
+}
+
+/*Services*/
+#Services {
+    background-color: #f2f4f9;
+    margin-top: 40px
+}
+#Services .col-12 {
+    margin-top: 50px;
+}
+.pagetitle {
+    color: #f2a30b;
+    font-family: 'Opens Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 0px
+}
+#Services .col-12 h1 {
+    font-family: Futura, "Trebuchet MS";
+    color: #1c2b38;
+    font-size: 40px;
+    font-weight: bold
+}
+.title {
+    margin-bottom: 30px;
+}
+.inl {
+    display: inline-block;
+}
+.leftpanel {
+    padding-left: 170px;
+    padding-bottom: 20px
+}
+.icons {
+    padding-bottom: 35px;
+    padding-right: 30px
+}
+.iconTitle {
+    color: #1c2b38;
+    font-family: 'Opens Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-weight: bold
+}
+.iconSub {
+    color: #1c2b38;
+    font-family: 'Opens Sans', sans-serif;
+    font-size: 11px
+}
+
+
+/* Contact Me */
+#ContactMe {
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerContactMe {
+    background: url('../pictures/contactme.jpg') center center no-repeat;
+    background-size: cover;
+}
+.contactbody {
+    width: 80%;
+    -webkit-box-shadow: 1px 2px 10px -1px rgba(87,85,87,0.75);
+    -moz-box-shadow: 1px 2px 10px -1px rgba(87,85,87,0.75);
+    box-shadow: 2px 4px 10px 2px rgba(87,85,87,0.75);
+}
+.cbody1 {
+    background-color: #f2a30b;
+    padding: 40px;
+    color: white;
+}
+.cbody1 h1 {
+    font-family: Futura, "Trebuchet MS";
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.cbody2 {
+    background-color: white;
+    color: #f2a30b;
+    padding: 40px;
+}
+.cbody2 h1 {
+    font-family: Futura, "Trebuchet MS";
+    font-weight: bold;
+    color: #f2a30b
+}
+.form-row {
+    margin-bottom: 10px;
+}
+.contacts {
+    padding-left: 55px;
+    font-size: 15px
+}
+.sns {
+    margin-top: 200px;
+    font-size: 20px;
+}
+
+/*  icon */
+.fas {
+    margin-right: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f2a30b;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.footer a {
+    color: #1c2b38;
+}
+
