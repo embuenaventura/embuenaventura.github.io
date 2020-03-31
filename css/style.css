@@ -11,6 +11,16 @@ body {
     color: #1c2b38
 }
 
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
 /*navbar*/
 .navbar{
     margin-bottom: 2rem;
@@ -76,15 +86,19 @@ body {
   right: 0;
 }
 
+.active {
+    border-bottom: 3px solid #f2a30b;
+}
 
 /*banner*/
 .banner {
-    background: url('../pictures/landingpage.jpg') center center no-repeat;
+    background: url('../pictures/landingpage1.jpg') center center no-repeat;
     background-size: cover;
     height: 105vh
 }
-.banner .col-6 {
-    margin-right: 60px
+.bannerpic {
+    margin-top: 160px;
+    padding-left: 40px;
 }
 .banner-content {
     margin-top: 42%
@@ -110,8 +124,13 @@ p.intro {
     padding: 10px;
     width: 30%;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 0px
+}
+.hiremebtn:hover {
+  background-color: #ffe182;
+  color: #1c2b38;
+  font-weight: bold;
 }
 
 /*  Additional Contact */
@@ -182,6 +201,8 @@ p.intro {
     height: 47px
 }
 
+
+
 /*Services*/
 #Services {
     background-color: #f2f4f9;
@@ -229,6 +250,22 @@ p.intro {
     font-size: 11px
 }
 
+/* Icon Hover */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 /* Contact Me */
 #ContactMe {

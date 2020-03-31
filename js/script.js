@@ -23,6 +23,18 @@ $(document).ready(function () {
             $element.removeClass(fadeInDown);
         }
     })
+
+    // Active
+    $("a").click(function(){
+            
+        // remove the class i.e. selectednav from all li
+        $('.nav-item a').removeClass("active");
+        // apply selectednav class to the current item
+                    $(this).addClass("active");
+    });
+
+    // wow.js
+    new WOW().init();
     
 
 });
