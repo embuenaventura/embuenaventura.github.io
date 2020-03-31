@@ -25,13 +25,35 @@ $(document).ready(function () {
     })
 
     // Active
-    $("a").click(function(){
+    // $("a").click(function(){
             
-        // remove the class i.e. selectednav from all li
-        $('.nav-item a').removeClass("active");
-        // apply selectednav class to the current item
-                    $(this).addClass("active");
-    });
+    //   $('.nav-item a').removeClass("active");
+    //        // remove the class i.e. selectednav from all li
+    //    // apply selectednav class to the current item
+    //                 $(this).addClass("active");
+    // });
+    $(window).scroll(function () {
+        var scrollbarLocation = $(this).scrollTop();
+        scrollLink.each(function () {
+            var sectionOffset = $(this.hash).offset().top - 50;
+
+            if (sectionOffset <= scrollbarLocation) {
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+            }
+        })
+    })
+
+    // Smooth
+    var scrollLink = $('.scroll');
+    scrollLink.click(function (e) {
+        e.preventDefault();
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000)
+    })
+
+
 
     // wow.js
     new WOW().init();

@@ -1,6 +1,6 @@
 html,
 body {
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
     height: 100%
 }
 body {
@@ -28,6 +28,9 @@ a:focus {
 .navbar-default {
     background: white;
     padding-left: 80px;
+    -webkit-box-shadow: 1px 2px 10px -1px rgba(87,85,87,0.75);
+    -moz-box-shadow: 1px 2px 10px -1px rgba(87,85,87,0.75);
+    box-shadow: 1px 2px 5px -1px rgba(87,85,87,0.75);
 }
 .navbar-transparent {
     background-color: transparent;
@@ -86,9 +89,9 @@ a:focus {
   right: 0;
 }
 
-.active {
+/*.active {
     border-bottom: 3px solid #f2a30b;
-}
+}*/
 
 /*banner*/
 .banner {
@@ -130,7 +133,6 @@ p.intro {
 .hiremebtn:hover {
   background-color: #ffe182;
   color: #1c2b38;
-  font-weight: bold;
 }
 
 /*  Additional Contact */
