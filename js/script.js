@@ -25,13 +25,6 @@ $(document).ready(function () {
     })
 
     // Active
-    // $("a").click(function(){
-            
-    //   $('.nav-item a').removeClass("active");
-    //        // remove the class i.e. selectednav from all li
-    //    // apply selectednav class to the current item
-    //                 $(this).addClass("active");
-    // });
     $(window).scroll(function () {
         var scrollbarLocation = $(this).scrollTop();
         scrollLink.each(function () {
@@ -52,8 +45,6 @@ $(document).ready(function () {
             scrollTop: $(this.hash).offset().top
         }, 1000)
     })
-
-
 
     // wow.js
     new WOW().init();
