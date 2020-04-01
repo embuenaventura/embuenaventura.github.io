@@ -63,22 +63,25 @@
 	</section>
 
 	<!-- Additional Contact -->
-	<div class="container addcon wow fadeInUp">
-		<div class="row">
-			<div class="col-sm">
-				<p class="addconT">Mobile Number</p>
-				<p class="addconS">+63 966 360 1467</p>
-			</div>
-			<div class="col-sm">
-				<p class="addconT">Address</p>
-				<p class="addconS">11 Pureza Street Malabon City 1470</p>
-			</div>
-			<div class="col-sm">
-				<p class="addconT">Email</p>
-				<p class="addconS">embuenaventura1@gmail.com</p>
+	<section>
+		<div class="container addcon wow fadeInUp">
+			<div class="row">
+				<div class="col-sm">
+					<p class="addconT">Mobile Number</p>
+					<p class="addconS">+63 966 360 1467</p>
+				</div>
+				<div class="col-sm">
+					<p class="addconT">Address</p>
+					<p class="addconS">11 Pureza Street Malabon City 1470</p>
+				</div>
+				<div class="col-sm">
+					<p class="addconT">Email</p>
+					<p class="addconS">embuenaventura1@gmail.com</p>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+	
 
 	<!-- About Me -->
 	<section id="AboutMe">
@@ -110,39 +113,42 @@
 		    		designer at Diva Transcriptions.</p>
 		    		<br>
 		    		<h1 class="wow fadeInUp">Skills</h1>
-		    		<div class="row skilldiv skilldiv1 wow fadeInUp">
-		    			<div class="col-2">
-		    				<p class="pskills">HTML</p>
-		    			</div>
-		    			<div class="col-2"> 
-		    				<p class="pskills">CSS</p>
-		    			</div>
-		    			<div class="col-8">
-		    				<p class="pskills pskillsLong">JAVASCRIPT</p>
-		    			</div>		    			
+		    		<div class="container">
+		    			<div class="row skilldiv wow fadeInUp">
+							<div class="col colborder">
+								<p class="pskills">HTML</p>
+							</div>
+							<div class="col colborder">
+								<p class="pskills">CSS</p>
+							</div>
+							<div class="col-6 colborder">
+								<p class="pskills">JAVASCRIPT</p>
+							</div>
+						</div>
+						<div class="row skilldiv wow fadeInUp">
+							<div class="col colborder">
+								<p class="pskills">PHP</p>
+							</div>
+							<div class="col colborder">
+								<p class="pskills">SQL</p>
+							</div>
+							<div class="col-6 colborder">
+								<p class="pskills">ADOBE PHOTOSHOP</p>
+							</div>
+						</div>
+						<div class="row skilldiv wow fadeInUp">
+							<div class="col colborder">
+								<p class="pskills">BOOTSRAP</p>
+							</div>
+							<div class="col colborder">
+								<p class="pskills">JQUERY</p>
+							</div>
+							<div class="col-5 colborder">
+								<p class="pskills">WORDPRESS</p>
+							</div>
+						</div>
 		    		</div>
-		    		<div class="row skilldiv1 wow fadeInUp">
-		    			<div class="col-2">
-		    				<p class="pskills">PHP</p>
-		    			</div>
-		    			<div class="col-2">
-		    				<p class="pskills">SQL</p>
-		    			</div>
-		    			<div class="col-8">
-		    				<p class="pskills pskillsLonggg">ADOBE PHOTOSHOP</p>
-		    			</div>
-		    		</div>
-		    		<div class="row skilldiv1 wow fadeInUp">
-		    			<div class="col-3" style="margin-right: 16px;">
-		    				<p class="pskills pskillsLong">BOOTSTRAP</p>
-		    			</div>
-		    			<div class="col-3" style="margin-right: -23px;">
-		    				<p class="pskills pskillsMed">JQUERY</p>
-		    			</div>
-		    			<div class="col-5">
-		    				<p class="pskills pskillsLong">WORDPRESS</p>
-		    			</div>
-		    		</div>
+		    		
 		    	</div>
 		  	</div>
 		</div>
@@ -233,36 +239,34 @@
 			<div class="col-7 cbody2">
 				<h1 class="wow fadeInUp">Message Me</h1>
 				<br>
-				<form>
+				<form id="contact-form" method="post" action="php/contactme.php">
 					<div class="form-row wow fadeInUp">
 						<div class="col">
-							<input type="text" class="form-control" placeholder="First Name">
+							<input name="firstname" type="text" class="form-control" placeholder="First Name" required>
 						</div>
 						<div class="col">
-							<input type="text" class="form-control" placeholder="Last Name">
-						</div>
-					</div>
-					<div class="form-row wow fadeInUp">
-						<div class="col">
-							<input type="tel" class="form-control" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="Contact Number (09xx-xxx-xxxx)">
+							<input name="lastname" type="text" class="form-control" placeholder="Last Name" required>
 						</div>
 					</div>
 					<div class="form-row wow fadeInUp">
 						<div class="col">
-							<input type="email" class="form-control" placeholder="Email Address">
+							<input name="mobile" type="tel" class="form-control" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="Contact Number (09xx-xxx-xxxx)">
+						</div>
+					</div>
+					<div class="form-row wow fadeInUp">
+						<div class="col">
+							<input name="email" type="email" class="form-control" placeholder="Email Address" required>
 						</div>
 					</div>
 					<div class="form-group wow fadeInUp">
-					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message here"></textarea>
+					    <textarea name="message" class="form-control" rows="3" placeholder="Write your message here" required></textarea>
 					 </div>
-					 <br><br>
-					 <button class="btn hiremebtn wow fadeInUp">Submit</button>
+					 <br><br>					 
+					 <button class="btn hiremebtn wow fadeInUp" type="submit" >Submit</button>
 				</form>
 			</div>
 		</div>
 	</section>
-
-
 
 	<!-- Footer -->
 	<footer>
@@ -285,6 +289,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<!-- wow.js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<!-- a helper script for vaidating the form-->
+	<!-- <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script> -->
 	<!-- custom js -->
 	<script src="js/script.js"></script>
 </body>
