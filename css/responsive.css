@@ -1,7 +1,5 @@
 /*xs*/
 @media (max-width: 575px) {
-    
-
 
     /* Banner */
     .banner {
@@ -22,12 +20,14 @@
         width: 80%;
     }
 
-
     /* Navbar */
     .navbar {
         margin-left: 0px;
     }
     .navbar-default {
+        padding-left: 20px;
+    }
+    .navbar-collapse {
         padding-left: 20px;
     }
 
@@ -99,11 +99,15 @@
 
 
 
-/*sm*/
-@media (min-width: 576px) and (max-width: 767px) {
-.banner h1 {
+/*@media (min-width:320px) {
+    .banner h1 {
         color: red
     }
+}*/
+
+/*sm*/
+@media (min-width: 576px) and (max-width: 767px) {
+
 }
 
 /* md (tablet) */
@@ -120,6 +124,11 @@
     .banner-content {
         margin-left: 60px;
         margin-top: 220px;
+    }
+
+    /* Navbar */
+    .navbar-collapse {
+        padding-left: 20px;
     }
 
     /* About Me */
