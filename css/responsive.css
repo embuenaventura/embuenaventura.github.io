@@ -55,11 +55,18 @@
 
     /* Services */
     .leftpanel {
-        padding-left: 80px;
-        padding-bottom: 90px
+        padding-left: 50px;
+        padding-bottom: 90px;
+        text-align: center;
     }
     .rightpanel {
-        padding-right: 30px;
+        padding-right: 50px;
+    }
+    .iconTitle, .iconSub {
+        text-align: center;
+    }
+    .icons {
+        padding-left: 40px;
     }
 
     /* Contact Me */
