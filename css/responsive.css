@@ -1,0 +1,82 @@
+/*xs*/
+@media (max-width: 575px) {
+
+    /* Banner */
+    .banner {
+        height: 150vh
+    }
+
+    .bannerpic {
+        padding-left: 50px
+    }
+    .banner .container {
+        margin-left: 0px;
+    }
+    .banner-content {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .hiremebtn {
+        width: 80%;
+    }
+
+
+    /* Navbar */
+    .navbar {
+        margin-left: 0px;
+    }
+
+    /* Additional Contact */
+    .addconS {
+        margin-bottom: 10px;
+    }
+
+    /* AboutMe */
+    .aboutmeleft {
+        padding-top: 20px;
+    }
+    .resp {
+        margin-top: 30px;
+    }
+    .aboutme {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .aboutme h1 {
+        
+        text-align: center;
+    }
+    .sub {
+        text-align: center;
+    }
+    .pbody {
+        text-align: center;
+    }
+
+    /* Services */
+    .leftpanel {
+        padding-left: 80px;
+        padding-bottom: 90px
+    }
+    .rightpanel {
+        padding-right: 30px;
+    }
+
+}
+
+
+
+/*sm*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* md (tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+/*lg*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
