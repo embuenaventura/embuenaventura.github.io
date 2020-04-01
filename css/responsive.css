@@ -62,6 +62,27 @@
         padding-right: 30px;
     }
 
+    /* Contact Me */
+    .sns {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .contacts {
+        padding-left: 20px;
+    }
+    .cbody2 h1 {
+        text-align: center;
+    }
+    .contbtn {
+        width: 100%;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: 70px;
+    }
+
+
 }
 
 
